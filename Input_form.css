@@ -1,0 +1,405 @@
+/***************************************************************************/
+/*PC画面用のスタイル
+/***************************************************************************/
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #fff5d9;
+}
+
+/*全体の要素のスタイル*/
+div.main {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #eab549 50px, #fff5d9 30%);
+}
+
+a {
+    text-decoration: none;
+}
+
+p.input_text{
+    margin-bottom: 20px;
+    padding: 3%;
+    background-color: #ffffd0;
+    border-radius: 6px;
+}
+
+textarea{
+    width: 100%;
+    padding: 0;
+}
+
+/*要素をうまいこと配置させるための要素*/
+div.contents {
+    margin: 0 auto;
+    width: 70%;
+    padding: 3% 15%;
+    height: auto;
+}
+
+/*実際に文字等を表示する場所（白いところ）*/
+div.form {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: #fefefe;
+    border-radius: 6px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+/*ヘッダーのスタイル*/
+div.form_header {
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+    height: 80px;
+    line-height: 80px;
+    font-weight: 600;
+    background-color: #f39800;
+}
+
+div.form_header p{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+div.form_contents{
+    padding: 4% 8% 8% 8%;
+}
+
+/*form縮小版*/
+div.form[id=small] {
+    width: 600px;
+}
+
+dl.input {
+    padding: 10px 10px;
+}
+
+dd.input{
+    margin-bottom: 10px;
+    padding: 15px 0px 15px 30px;
+    background-color: #ffffd0;
+    border-radius: 6px;
+}
+
+dd.input input{
+    width: 90%;
+}
+
+p.error {
+    color: #bf0000;
+}
+
+div.button {
+    margin: 0 auto;
+    padding: 30px 5% 5%;
+    width: 90%;
+    height: 20%;
+}
+
+/*リンクボタンのスタイル*/
+div.link {
+    margin: 3%;
+    padding: 2%;
+    width: 40%;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: x-large;
+    background-color: #f5ba00;
+    color: #fefefe;
+    border-radius: 6px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+div.link:hover {
+    background-color: #d39800;
+    color: #fefefe;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4) inset;
+}
+
+/*左側に配置するボタンのスタイル*/
+div.left {
+    float: left;
+}
+
+/*中央に配置するボタンのスタイル*/
+div.center {
+    margin: auto;
+    text-decoration: none;
+}
+
+/*中央に配置するボタンのスタイル その2*/
+div.select_center {
+    margin: 30px auto;
+    text-decoration: none;
+}
+
+/*右側に配置するボタンのスタイル*/
+div.right {
+    float: right;
+}
+
+/*データベースの情報を表示するテーブルのスタイル*/
+table.info {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*縮小版テーブル*/
+table.info[id=small] {
+    width: 60%;
+}
+
+/*テーブルの見出しの色*/
+th.info {
+    background-color: #ffefae;
+}
+
+/*上に同じく*/
+td.info {
+    height: auto;
+    padding: 15px 10px;
+    text-indent: 1em;
+    background-color: #fffede;
+}
+
+/*送信ボタン*/
+input.submit {
+    color: #111;
+    background-color: #eee;
+    font-size: large;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+input.submit:hover {
+    background-color: #ccc;
+    color: #111;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4) inset;
+}
+
+/*ユーザページの機能ボタン*/
+input.function {
+    color: #111;
+    background-color: #eee;
+    font-size: large;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+input.function:hover {
+    background-color: #ccc;
+    color: #111;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset;
+}
+
+/*削除ボタン*/
+div.delete {
+    text-align: center;
+    width: 60px;
+    padding: 15px 0px;
+    color: #FFFFFF;
+    background-color: #bf2020;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+div.delete:hover {
+    background-color: #9f0000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset;
+}
+
+/*編集ボタン*/
+div.update {
+    text-align: center;
+    width: 60px;
+    padding: 15px 0px;
+    color: #FFFFFF;
+    background-color: #8bc9e3;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+div.update:hover {
+    background-color: #6ba9c3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset;
+}
+
+/************************************************
+この大きさ以下になったら余白と文字の大きさを変える
+*************************************************/
+@media screen and (max-width: 1200px) {
+    div.contents {
+        padding: 5%;
+        width: 90%;
+    }
+}
+
+
+/************************************************
+スマホ用レイアウト
+*************************************************/
+@media screen and (max-width: 700px) {
+    div.main {
+    }
+
+    textarea{
+        width: 100%;
+        padding: 0;
+    }
+
+    /*要素をうまいこと配置させるための要素*/
+    div.contents {
+        padding: 3%;
+        width: 94%;
+    }
+
+    /*ヘッダーのスタイル*/
+    div.form_header {
+        width: 100%;
+        font-size: x-large;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    div.form {
+        margin: auto;
+        padding: 0%;
+        width: 100%;
+    }
+
+    div.form[id=small] {
+        padding: 0%;
+        width: 100%;
+    }
+
+    div.form_contents{
+        padding: 3% 5% 5% 5%;
+    }
+
+    dl.input {
+        padding: 0%;
+    }
+
+    dd.input{
+        -webkit-margin-start: 20px;
+        padding: 15px 0 15px 7%;
+    }
+
+    div.button {
+        margin: 0 auto;
+        padding: 0px;
+        width: 100%;
+        height: 20%;
+    }
+
+    /*リンクボタンのスタイル*/
+    div.link {
+        margin: 5% 2.5%;
+        padding: 5% 0;
+        width: 95%;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: x-large;
+    }
+
+    div.link:hover {
+    }
+
+    /*左側に配置するボタンのスタイル*/
+    div.right {
+        float: none;
+    }
+
+    div.left {
+        float: none;
+    }
+
+    /*右側に配置するボタンのスタイル*/
+    /*データベースの情報を表示するテーブルのスタイル*/
+    table.info {
+        display: block;
+        width: 95%;
+        border: none;
+        padding: 2.5%;
+        table-layout: fixed;
+    }
+
+    table.info body{
+
+    }
+
+    table.info th {
+
+        display: none;
+    }
+
+    /*縮小版テーブル*/
+    /*table.info[id=small]{
+        width: 500px;
+    }*/
+    table.info tr {
+        background-color: #fffede;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    /*上に同じく*/
+    td.info {
+        font-size: smaller;
+        background-color: inherit;
+        height: auto;
+        border-bottom: 1px solid #fff;
+        display: inline-block;
+        width: 97%;
+        padding: 1.5%;
+    }
+
+    td.command {
+        margin: 0 auto;
+        width: 48%;
+        padding: 0px;
+        display: inline-block;
+    }
+
+    /*削除ボタン*/
+    div.delete {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 5px 0px;
+    }
+
+    /*編集ボタン*/
+    div.update {
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+        padding: 5px 0px;
+    }
+
+    div.button {
+        width: 100%;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,755 @@
+/***************************************************************/
+/*emergency.htmlでしか使わないcss
+/***************************************************************/
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/*要素全体　背景グラデーション等を設定*/
+div.main {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #eab549 50px, #fff5d9 30%);
+}
+
+/*システム名や切り替えボタンを配置する場所*/
+div.header {
+    float: left;
+    margin: 1%;
+    width: 28%;
+    height: 19%;
+    color: #ffffff;
+}
+
+/*ローディング用gif画像のスタイル*/
+#now-loading{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+/*クリックするとサイドメニューを出すボタンのスタイル*/
+div.menu_button {
+    display: none;
+}
+
+/*システム名のスタイル　大文字でアピール*/
+img.system-logo {
+    padding: 7% 0;
+    height: 30%;
+    width: 95%;
+}
+
+/*切り替えボタンのうち、現在選択されているボタンのスタイル*/
+div.mode1 {
+    float: left;
+    margin: 1.5% 3%;
+    height: 35px;
+    width: 44%;
+    text-align: center;
+    line-height: 35px;
+    background-color: #d59a00;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4) inset;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+/*切り替えボタンのうち、選択されていないほうのスタイル*/
+div.mode2 {
+    float: left;
+    margin: 1.5% 3%;
+    height: 35px;
+    width: 44%;
+    text-align: center;
+    line-height: 35px;
+    background-color: #f5ba00;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+div.mode2:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4) inset;
+
+}
+
+/*main内にある、いろいろな要素を配置するために用意したdiv要素*/
+div.contents {
+    margin: 0 auto;
+    width: 73%;
+    height: 100%;
+    background-color: inherit;
+}
+
+/*地図を表示させる部分の広さを指定している*/
+div.top{
+    height: 77%;
+}
+
+/*情報などなどを表示する広さを設定している*/
+div.bottom{
+    height: 23%;
+    position: relative;
+}
+
+/*マップとその位置情報を表示する場所全体の要素*/
+div.map {
+    position: relative;
+    z-index: 0;
+    float: right;
+    margin: 1%;
+    padding-top: 3%;
+    width: 68%;
+    height: 92%;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+/*マップ要素内で実際に地図を表示する場所のスタイル*/
+div[id=map] {
+    position: absolute;
+    top: 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: 76%;
+    z-index: 1;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+
+/*色分け情報を表示するエリアのスタイル*/
+div.break_down{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    font-weight: 600;
+    display: none;
+    margin: 10px 20px 20px 20px;
+    padding: 0 10px;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+/*選択した場所の情報を表示する場所のスタイル*/
+div[id=info] {
+    float: left;
+    padding: 20px;
+}
+
+/*現在地を取得するボタンのスタイル*/
+div[id=herePlace] {
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    text-align: center;
+    font-size: x-large;
+    height: 1px;
+    line-height: 1px;
+    padding: 6% 0;
+    width: 12%;
+    border-radius: 5px;
+    background-color: #00afcc;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    color: #eee;
+}
+
+div[id=herePlace]:hover {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4) inset;
+    background-color: #008fac;
+}
+
+
+
+/*緊急時にメニューバーを表示する場所のスタイル*/
+div.emergency_menu {
+    float: left;
+    margin: 1%;
+    width: 28%;
+    height: auto;
+    color: #f8f8f8;
+    background-color: inherit;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+/**/
+tr.name {
+    font-size: x-large;
+}
+
+/*選択した地域の情報を表示するテーブルの列要素の設定*/
+tr.parameter {
+    font-size: large;
+    font-weight: 600;
+    text-indent: 3em;
+    line-height: 30px;
+    text-shadow: 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+/*メニューバーのスタイル*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 800;
+}
+
+ul#menu li {
+    width: 100%;
+    padding: 0;
+    z-index: 0;
+}
+
+/*メニューバー（見出し）のスタイル*/
+ul#menu li span {
+    text-align: center;
+    height: 1px;
+    line-height: 1px;
+    padding: 6% 0;
+    background: linear-gradient(to bottom, #f39800, #d37800);
+    display: block;
+    border: 1px solid #333333;
+    color: #fff;
+}
+
+/*緊急時用のメニューバー（見出し）は色を変える*/
+ul#menu li span.emergency {
+    background: linear-gradient(to bottom, #f39800, #d37800);
+}
+
+/*メニューバー（子要素）のスタイル*/
+ul#menu li a {
+    transition: background 0.3s ease-out;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-indent: 2em;
+    height: 1px;
+    display: block;
+    line-height: 1px;
+    padding: 5% 0;
+    background: linear-gradient(to bottom, rgba(245,186,0,0.7),rgba(245,170,0,0.7));
+    background-color: #f5ba00;
+    color: #eee;
+}
+
+#menu li a:hover {
+    background-color: #955a00;
+}
+
+/*詳細情報表示ボタンのスタイル*/
+div[id=detail] {
+    display: none;
+    position: absolute;
+    right: 20%;
+    bottom: 20%;
+    text-align: center;
+    font-size: x-large;
+    height: 1px;
+    line-height: 1px;
+    padding: 2.5% 0;
+    width: 20%;
+    border-radius: 5px;
+    background-color: #f39800;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    color: #eee;
+}
+
+div[id=detail]:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) inset;
+    background-color: #d37800;
+}
+
+/*クリックするとおしらせ一覧に飛ぶボタンのスタイル*/
+div.info_button {
+    display: none;
+    text-align: center;
+    color: #eee;
+    margin: 5px;
+    float: right;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 2px;
+    background-color: #00afcc;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* モーダルウィンドウのスタイル */
+#modal-main {
+    display: none;
+    width: 700px;
+    height: 590px;
+    margin: 0;
+    padding: 0;
+    background-color: #fffede;
+    color: #666666;
+    position: fixed;
+    z-index: 999;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+/* 背景を暗くするためのスタイル */
+#modal-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+
+/* モーダルウィンドウ名のスタイル */
+div.modal-name{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 800;
+    font-size: x-large;
+    color: #eee;
+    background-color: #f39800;
+    border-radius: 5px 5px 0 0;
+}
+
+
+table.modal-table {
+    width: 640px;
+    height: auto;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+table.modal-table th.small {
+    width: 140px;
+    height: 15px;
+    margin: 0 auto;
+    background-color: #ffefae;
+    padding: 10px 0px;
+}
+
+table.modal-table th.large {
+    width: 140px;
+    height: 110px;
+    margin: 0 auto;
+    background-color: #ffefae;
+    padding: 10px 0px;
+}
+
+table.modal-table td {
+    background-color: #fff;
+    padding: 10px 0px;
+}
+
+/*非常時ページで表示する「市役所からのお知らせ」ボタンのスタイル*/
+div.link_information {
+    float: left;
+    margin: 2%;
+    padding: 1.5% 1%;
+    width: 24%;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: x-large;
+    background-color: #f5ba00;
+    color: #fefefe;
+    border-radius: 6px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+div.link_information:hover {
+    background-color: #d39800;
+    color: #fefefe;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4) inset;
+}
+
+/************************************************
+この大きさ以下になったら余白と文字の大きさを変える
+*************************************************/
+@media screen and (max-width: 1200px) {
+    div.contents {
+        width: 95%;
+    }
+    tr.parameter {
+        font-size: medium;
+        font-weight: 600;
+        text-indent: 1em;
+    }
+    div[id=herePlace] {
+        font-size: large;
+        height: 1px;
+        line-height: 1px;
+    }
+    div.link_information {
+        font-size: large;
+    }
+    div[id=detail] {
+        font-size: large;
+    }
+}
+
+/************************************************
+タブレット用レイアウト
+*************************************************/
+@media screen and (max-width: 700px) {
+    html{
+        height: 100%;
+    }
+
+    body{
+        height: 100%;
+    }
+
+    div.main {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    div.menu_button {
+        display: block;
+        font-size: x-large;
+        font-weight: 700;
+        text-align: center;
+        color: #eee;
+        margin: 2% 0 0 0;
+        float: right;
+        width: 10%;
+        height: 1px;
+        line-height: 1px;
+        padding: 5% 0;
+        border-radius: 2px;
+        background-color: #f5ba00;
+        box-shadow: 0 0px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    div.info_button{
+        display: block;
+        font-size: x-large;
+        font-weight: 700;
+        text-align: center;
+        color: #eee;
+        margin: 2% 0 0 2%;
+        float: right;
+        width: 10%;
+        height: 1px;
+        line-height: 1px;
+        padding: 5% 0;
+        border-radius: 2px;
+        background-color: #00afcc;
+        box-shadow: 0 0px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    div.header {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: 18%;
+        text-align: center;
+    }
+
+    div.header_top {
+        height: 60%;
+        width: 100%;
+    }
+
+    div.header_bottom {
+        height: 40%;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*スマホ用に小さく*/
+    img.system-logo {
+        float: left;
+        text-indent: 1em;
+        padding: 0;
+        width: 65%;
+        height: 85%;
+    }
+
+    div.mode1 {
+        margin: 1.5% 5%;
+        padding: 3% 0;
+        height: 1px;
+        width: 39%;
+        line-height: 1px;
+        background-color: #e4a900;
+    }
+
+    div.mode2 {
+        margin: 1.5% 5%;
+        padding: 3% 0;
+        height: 1px;
+        width: 39%;
+        text-align: center;
+        line-height: 1px;
+        background-color: #e4a900;
+    }
+
+    div.contents {
+        margin: 0 auto;
+        padding: 0px;
+        width: 95%;
+        height: 100%;
+    }
+
+    div.map {
+        position: relative;
+        z-index: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 76%;
+    }
+
+    div.top {
+        height: 76%;
+    }
+
+    div.bottom {
+        height: 24%;
+        position: relative;
+    }
+
+    /*色分け情報を表示するエリアのスタイル*/
+    div.break_down{
+        line-height: 0.3em;
+        font-size: small;
+        top: 20px;
+        right: 0px;
+        font-weight: 300;
+        margin: 0px 5px 5px 20px;
+        padding: 5px;
+    }
+
+    div[id=map] {
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        height: 75%;
+        z-index: 2;
+    }
+
+    div[id=info] {
+        padding: 10px;
+    }
+
+    div[id=herePlace] {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        margin: 0px;
+        font-size: x-large;
+        width: 20%;
+        height: 1px;
+        line-height: 1px;
+        padding: 10% 0;
+    }
+
+    /*上に同じく*/
+    div.emergency_menu {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        cursor: pointer;
+        left: -70%;
+        margin: 0 auto;
+        padding: 0px;
+        width: 70%;
+        height: 100%;
+    }
+
+
+
+    /*スマホ画面ではそもそも表示しない*/
+    div.link_information {
+        display: none;
+    }
+
+    tr.name {
+        font-size: x-large;
+    }
+
+    tr.parameter {
+        font-size: medium;
+        text-indent: 1em;
+        line-height: 30px;
+        text-shadow: 1px -1px rgba(0, 0, 0, 0.2);
+    }
+
+    /*table要素を加えておく*/
+    ul#menu {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*table-rowで等間隔に配置しておく*/
+    ul#menu li {
+        display: table-row;
+        vertical-align: middle;
+        table-layout: auto;
+        background-color: #f59a00;
+        width: 100%;
+        border-bottom: 1px solid #333333;
+    }
+
+    ul#menu li.emergency {
+        display: table-row;
+        vertical-align: middle;
+        table-layout: auto;
+        background-color: #f59a00;
+        width: 100%;
+        border-bottom: 1px solid #333333;
+    }
+
+    /*paddingで余白を指定することで高さに対する幅を調整している*/
+    ul#menu li span {
+        padding: 8% 0;
+        height: 1px;
+        line-height: 1px;
+        text-align: center;
+        display: block;
+        table-layout: auto;
+        border: 1px solid #333333;
+    }
+
+    ul#menu li a {
+        font-size: small;
+        padding: 7% 0;
+        text-indent: 2em;
+        height: 1px;
+        display: block;
+        line-height: 1px;
+    }
+
+    /*詳細情報表示ボタンのスタイル*/
+    div[id=detail] {
+        position: absolute;
+        bottom: 10%;
+        right: 30%;
+        margin: 10px 0px 0px 0px;
+        height: 1px;
+        line-height: 1px;
+        padding: 4% 0px;
+        width: 20%;
+        border-radius: 5px;
+        font-size: large;
+    }
+
+    /* モーダルウィンドウのスタイル*/
+    #modal-main {
+        display: none;
+        width: 90%;
+        height: 75%;
+    }
+
+    /* 背景を暗くするためのスタイル */
+    #modal-bg {
+        height: 120%;
+    }
+
+    div.modal-name{
+        height: 10%;
+        line-height: 200%;
+        font-size: medium;
+    }
+
+    table.modal-table {
+        height: 90%;
+        width: 100%;
+        margin: auto;
+        padding: 2.5% 2.5%;
+    }
+
+    table.modal-table th.small {
+        width: 25%;
+        height: 4%;
+        font-size: small;
+        padding: 2% 0px;
+    }
+
+    table.modal-table th.large {
+        width: 25%;
+        height: 27.5%;
+        font-size: small;
+        padding: 2% 0px;
+    }
+
+    table.modal-table td {
+        font-size: small;
+        padding: 10px 0px;
+    }
+
+}
+
+/*************************************************************/
+/*スマホ用のサイズになったら文字の大きさを変える
+/*************************************************************/
+@media screen and (max-width: 480px) {
+    tr.parameter {
+        font-size: small;
+        font-weight: 500;
+        text-indent: 1em;
+        line-height: 15px;
+    }
+    div[id=herePlace] {
+        font-size: medium;
+    }
+    div[id=detail]{
+        font-size: medium;
+    }
+    div.menu_button {
+        font-size: medium;
+        font-weight: 700;
+        padding: 0;
+        margin: 5px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+    div.info_button{
+        font-size: medium;
+        font-weight: 700;
+        padding: 0;
+        margin: 5px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+}
+
+/*************************************************************/
+/*さらに小さくなった場合
+/*************************************************************/
+@media screen and (max-width: 350px) {
+    tr.parameter {
+        font-size: x-small;
+        font-weight: 500;
+        text-indent: 1em;
+        line-height: 15px;
+    }
+    div[id=herePlace] {
+        font-size: small;
+    }
+    div[id=detail]{
+        font-size: small;
+    }
+}
