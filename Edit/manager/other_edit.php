@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <dl class="input">
                         <p>
                             <dt>部署名</dt>
-                            <?php if (!isset($_SESSION['shelterFlug'])): ?>
+                            <?php if (isset($_SESSION['shelterFlug'])): ?>
                         <dd class="input">
                             <input type="text" name="department" size="35" maxlength="255" readonly="readonly"
                                 <?php if (!empty($errors) && isset($_POST['department'])): ?>
