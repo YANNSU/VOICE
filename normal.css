@@ -56,6 +56,7 @@ img.system-logo {
 
 /*切り替えボタンのうち、現在選択されているボタンのスタイル*/
 div.mode1 {
+    font-weight: bold;
     float: left;
     margin: 1.5% 3%;
     height: 35px;
@@ -70,6 +71,7 @@ div.mode1 {
 
 /*切り替えボタンのうち、選択されていないほうのスタイル*/
 div.mode2 {
+    font-weight: bold;
     float: left;
     margin: 1.5% 3%;
     height: 35px;

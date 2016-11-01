@@ -49,7 +49,7 @@ if (!empty($_POST)) {
                 <p>おしらせ情報の更新</p>
             </div>
             <div class="form_contents">
-                <p>市民の方に伝達したい情報を入力してください</p>
+                <p>住民の方に伝達したい情報を入力してください</p>
                 <form method="POST" action="">
                     <dl class="input">
                         <dt>

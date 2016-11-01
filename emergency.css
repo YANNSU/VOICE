@@ -31,17 +31,6 @@ div.header {
     color: #ffffff;
 }
 
-/*ローディング用gif画像のスタイル*/
-#now-loading{
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 15px;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-}
-
 /*クリックするとサイドメニューを出すボタンのスタイル*/
 div.menu_button {
     display: none;
@@ -56,6 +45,7 @@ img.system-logo {
 
 /*切り替えボタンのうち、現在選択されているボタンのスタイル*/
 div.mode1 {
+    font-weight: bold;
     float: left;
     margin: 1.5% 3%;
     height: 35px;
@@ -70,6 +60,7 @@ div.mode1 {
 
 /*切り替えボタンのうち、選択されていないほうのスタイル*/
 div.mode2 {
+    font-weight: bold;
     float: left;
     margin: 1.5% 3%;
     height: 35px;
@@ -318,9 +309,8 @@ div.info_button {
     z-index: 998;
 }
 
-/* モーダルウィンドウ名のスタイル */
-div.modal-name{
-    text-align: center;
+/* モーダルヘッダーのスタイル */
+div.modal-header {
     height: 50px;
     line-height: 50px;
     font-weight: 800;
@@ -330,6 +320,14 @@ div.modal-name{
     border-radius: 5px 5px 0 0;
 }
 
+/* モーダルウィンドウ名のスタイル */
+div.modal-name{
+    text-align: center;
+    line-height: 50px;
+    font-weight: 800;
+    font-size: x-large;
+    color: #eee;
+}
 
 table.modal-table {
     width: 640px;
@@ -666,8 +664,11 @@ div.link_information:hover {
         height: 120%;
     }
 
-    div.modal-name{
+    div.modal-header{
         height: 10%;
+    }
+
+    div.modal-name{
         line-height: 200%;
         font-size: medium;
     }

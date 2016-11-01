@@ -52,7 +52,7 @@ $table = mysqli_fetch_assoc($recordSet);
     <div class="contents">
         <div class="form" id="small">
             <div class="form_header">
-                <p>おしらせ編集</p>
+                <p>おしらせ情報の更新</p>
             </div>
             <div class="form_contents">
                 <dl class="input">
@@ -89,7 +89,7 @@ $table = mysqli_fetch_assoc($recordSet);
                         <dt>
                             <input type="hidden" name="id"
                                    value="<?php echo(htmlspecialchars($table['id'])); ?>">
-                        <center><input type="submit" class="submit" value="この内容で更新する"></center>
+                        <center><input type="submit" class="submit" value="お知らせ情報の更新"></center>
                     </form>
                 </dl>
             </div>

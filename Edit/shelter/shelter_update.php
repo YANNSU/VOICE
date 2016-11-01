@@ -65,7 +65,7 @@ else {
                         </p>
                         </dt>
                         <dt>
-                        <p>食料の状況</p>
+                        <p>食料品の状況</p>
                         <p class="input_text"><textarea name="food" cols="40" rows="10" style="width: 100%">
                             <?php if (isset($table['food'])) { ?>
                                 <?php print(htmlspecialchars($table['food'])); ?>
@@ -73,7 +73,7 @@ else {
                         </textarea></p>
                         </dt>
                         <dt>
-                        <p>生活品の状況</p>
+                        <p>生活用品の状況</p>
                         <p class="input_text"><textarea name="life" cols="40" rows="10" style="width: 100%">
                             <?php if (isset($table['life'])) { ?>
                                 <?php print(htmlspecialchars($table['life'])); ?>

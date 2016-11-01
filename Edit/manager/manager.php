@@ -34,7 +34,7 @@ if ($_SESSION['manager'] != true) {
                 <dl class="input">
                     <dt>
                         <p>
-                        <center><a href="add_user.php"><input class="function" type="submit" value="アカウントの追加"></a>
+                        <center><a href="add_user.php"><input class="function" type="submit" value="アカウントの登録"></a>
                         </center>
                         </p>
                     </dt>

@@ -52,7 +52,7 @@ if (!empty($_POST)) {
     <div class="contents">
         <div class="form" id="small">
             <div class="form_header">
-                <p>アカウント情報の確認</p>
+                <p>アカウント登録情報の確認</p>
             </div>
             <div class="form_contents">
                 <p>この内容で登録してもよろしいですか？</p>
