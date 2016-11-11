@@ -19,16 +19,16 @@ function geoLocation() {
 function successFunc(position) {
 
     var defaultStyle = new OpenLayers.Style({
-        strokeColor: "#000000",
-        fillColor: "#0000ff",
+        strokeColor: "#eeeeee",
+        fillColor: "#0077ff",
         fillOpacity: 1,    // 内側の透明度
         strokeWidth: 2, // 外周の太さ
-        pointRadius: 5  // 半径
+        pointRadius: 10  // 半径
     });
     //選択された時に画像を大きくする
     var selectStyle = new OpenLayers.Style({
-        strokeColor: "#000000",
-        fillColor: "#0000ff",
+        strokeColor: "#eeeeee",
+        fillColor: "#0077ff",
         fillOpacity: 1,    // 内側の透明度
         strokeWidth: 2, // 外周の太さ
         pointRadius: 10  // 半径

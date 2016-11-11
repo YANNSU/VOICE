@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="514cbd71-d724-42a2-8c27-85b86dc97407" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/LifeWater.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/TemporaryShelter.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Edit/manager/add_check.php" afterPath="$PROJECT_DIR$/Edit/manager/add_check.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Edit/manager/manager.php" afterPath="$PROJECT_DIR$/Edit/manager/manager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Edit/shelter/shelter_update.php" afterPath="$PROJECT_DIR$/Edit/shelter/shelter_update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Edit/user/create.php" afterPath="$PROJECT_DIR$/Edit/user/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Edit/user/update.php" afterPath="$PROJECT_DIR$/Edit/user/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emergency.css" afterPath="$PROJECT_DIR$/emergency.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emergency.html" afterPath="$PROJECT_DIR$/emergency.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/normal.css" afterPath="$PROJECT_DIR$/normal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emergency_information.js" afterPath="$PROJECT_DIR$/emergency_information.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map/geolocation.js" afterPath="$PROJECT_DIR$/map/geolocation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/normal.html" afterPath="$PROJECT_DIR$/normal.html" />
     </list>
     <ignored path="ptype.iws" />
@@ -35,43 +32,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="emergency.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/emergency.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="247">
-                  <caret line="659" column="5" selection-start-line="659" selection-start-column="5" selection-end-line="659" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="manager.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Edit/manager/manager.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="edit_check.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Edit/manager/edit_check.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-                  <folding>
-                    <marker date="1477552690251" expanded="true" signature="327:392" placeholder="UPDATE membe... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="add_check.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Edit/manager/add_check.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+                <state relative-caret-position="476">
+                  <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
                   <folding>
                     <marker date="1477993359813" expanded="true" signature="327:392" placeholder="INSERT INTO members... " />
                   </folding>
@@ -82,18 +47,18 @@
           <file leaf-file-name="user_edit.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Edit/user/user_edit.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
+                <state relative-caret-position="810">
                   <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="edit_check.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="edit_check.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Edit/user/edit_check.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
-                  <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+                <state relative-caret-position="810">
+                  <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
                   <folding>
                     <marker date="1477547118261" expanded="true" signature="219:284" placeholder="UPDATE membe... " />
                   </folding>
@@ -104,7 +69,7 @@
           <file leaf-file-name="shelter_update.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Edit/shelter/shelter_update.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
+                <state relative-caret-position="1547">
                   <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
                   <folding>
                     <marker date="1477994397156" expanded="true" signature="361:465" placeholder="UPDATE shelt... " />
@@ -127,7 +92,7 @@
           <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Edit/user/update.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="351">
+                <state relative-caret-position="1003">
                   <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
                   <folding>
                     <marker date="1477994200573" expanded="true" signature="325:399" placeholder="UPDATE infor... " />
@@ -140,11 +105,31 @@
           <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Edit/user/create.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+                <state relative-caret-position="1037">
+                  <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
                   <folding>
                     <marker date="1477994657644" expanded="true" signature="326:421" placeholder="INSERT INTO information... " />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="emergency_information.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/emergency_information.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1088">
+                  <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="map_functions.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/map/map_functions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="31" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="31" selection-end-column="1" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -165,23 +150,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="other_edit_check.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Edit/manager/other_edit_check.php">
+          <file leaf-file-name="emergency.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/emergency.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-                  <folding>
-                    <marker date="1477547117956" expanded="true" signature="324:398" placeholder="UPDATE membe... " />
-                  </folding>
+                <state relative-caret-position="289">
+                  <caret line="181" column="36" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="36" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="emergency.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/emergency.js">
+          <file leaf-file-name="disaster_prevention.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/map/disaster_prevention.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+                <state relative-caret-position="374">
+                  <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="geolocation.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/map/geolocation.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -190,19 +183,27 @@
           <file leaf-file-name="emergency.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/emergency.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="470">
+                <state relative-caret-position="11815">
                   <caret line="695" column="0" selection-start-line="695" selection-start-column="0" selection-end-line="695" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="emergency.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="emergency.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/emergency.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="351">
-                  <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-                  <folding />
+                <state relative-caret-position="232">
+                  <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+                  <folding>
+                    <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#p#2;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#p#3;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#p#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#p#2;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -210,7 +211,7 @@
           <file leaf-file-name="information.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/information.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
+                <state relative-caret-position="810">
                   <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
                   <folding>
                     <marker date="1477545648562" expanded="true" signature="247:307" placeholder="SELECT * FRO... information" />
@@ -228,7 +229,7 @@
           <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Edit/user/update.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="691">
+                <state relative-caret-position="810">
                   <caret line="91" column="84" selection-start-line="91" selection-start-column="84" selection-end-line="91" selection-end-column="84" />
                   <folding>
                     <marker date="1477994200573" expanded="true" signature="325:399" placeholder="UPDATE infor... " />
@@ -238,14 +239,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="shelter_create.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="shelter_create.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Edit/shelter/shelter_create.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+                <state relative-caret-position="320">
+                  <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
                   <folding>
                     <marker date="1477557264534" expanded="true" signature="398:489" placeholder="INSERT INTO shelter_goods... " />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="normal.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/normal.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="793">
+                  <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -277,8 +288,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Edit/login.php" />
         <option value="$PROJECT_DIR$/normal.css" />
-        <option value="$PROJECT_DIR$/normal.html" />
-        <option value="$PROJECT_DIR$/emergency.html" />
         <option value="$PROJECT_DIR$/emergency.css" />
         <option value="$PROJECT_DIR$/Edit/manager/manager.php" />
         <option value="$PROJECT_DIR$/Edit/manager/add_check.php" />
@@ -286,6 +295,10 @@
         <option value="$PROJECT_DIR$/Edit/user/user_edit.php" />
         <option value="$PROJECT_DIR$/Edit/shelter/shelter_update.php" />
         <option value="$PROJECT_DIR$/Edit/user/create.php" />
+        <option value="$PROJECT_DIR$/normal.html" />
+        <option value="$PROJECT_DIR$/map/geolocation.js" />
+        <option value="$PROJECT_DIR$/emergency_information.js" />
+        <option value="$PROJECT_DIR$/emergency.html" />
       </list>
     </option>
   </component>
@@ -299,7 +312,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -344,6 +357,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ptype" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ptype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ptype" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -415,6 +442,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ptype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ptype" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="city" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mito" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -476,18 +521,21 @@
       <workItem from="1477567658663" duration="616000" />
       <workItem from="1477622114437" duration="6807000" />
       <workItem from="1477888990858" duration="3115000" />
-      <workItem from="1477990400699" duration="3361000" />
+      <workItem from="1477990400699" duration="3946000" />
+      <workItem from="1478228969545" duration="1339000" />
+      <workItem from="1478747946113" duration="14530000" />
+      <workItem from="1478839492857" duration="2816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13934000" />
+    <option name="totallyTimeSpent" value="33204000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26332623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27132195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -522,6 +570,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Edit/shelter/shelter_create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1477557264534" expanded="true" signature="398:489" placeholder="INSERT INTO shelter_goods... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -534,9 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-          <folding>
-            <marker date="1477630288494" expanded="true" signature="237:292" placeholder="SELECT * FRO... members" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -544,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5100">
           <caret line="300" column="5" selection-start-line="300" selection-start-column="5" selection-end-line="300" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -552,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -560,7 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,9 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <marker date="1477547117956" expanded="true" signature="324:398" placeholder="UPDATE membe... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,7 +653,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#2;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#3;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#2;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -620,9 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-          <folding>
-            <marker date="1477630288494" expanded="true" signature="237:292" placeholder="SELECT * FRO... members" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
           <caret line="93" column="56" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,9 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <marker date="1477547117956" expanded="true" signature="324:398" placeholder="UPDATE membe... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -682,7 +731,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#2;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#3;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#2;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -707,9 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <marker date="1477547117956" expanded="true" signature="324:398" placeholder="UPDATE membe... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -725,21 +779,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/top.css" />
     <entry file="file://$PROJECT_DIR$/top.html" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Edit/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-          <folding>
-            <marker date="1477630288494" expanded="true" signature="237:292" placeholder="SELECT * FRO... members" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -747,23 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/normal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emergency.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,91 +797,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="305" column="25" selection-start-line="305" selection-start-column="25" selection-end-line="305" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emergency.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emergency.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="659" column="5" selection-start-line="659" selection-start-column="5" selection-end-line="659" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Edit/manager/manager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="595">
           <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Edit/manager/edit_check.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="748">
           <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-          <folding>
-            <marker date="1477552690251" expanded="true" signature="327:392" placeholder="UPDATE membe... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-          <folding>
-            <marker date="1477545648562" expanded="true" signature="247:307" placeholder="SELECT * FRO... information" />
-            <marker date="1477545648562" expanded="true" signature="368:428" placeholder="SELECT * FRO... information" />
-            <marker date="1477545648562" expanded="true" signature="469:550" placeholder="SELECT * FRO... information" />
-            <marker date="1477545648562" expanded="true" signature="593:653" placeholder="SELECT * FRO... information" />
-            <marker date="1477545648562" expanded="true" signature="783:838" placeholder="SELECT * FRO... information" />
-            <marker date="1477545648562" expanded="true" signature="857:936" placeholder="SELECT * FRO... ${$sql1}" />
-            <marker date="1477545648562" expanded="true" signature="1119:1179" placeholder="SELECT * FRO... information" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Edit/manager/add_check.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-          <folding>
-            <marker date="1477993359813" expanded="true" signature="327:392" placeholder="INSERT INTO members... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Edit/user/user_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Edit/shelter/shelter_create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
-          <folding>
-            <marker date="1477557264534" expanded="true" signature="398:489" placeholder="INSERT INTO shelter_goods... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Edit/shelter/shelter_update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="1547">
           <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
           <folding>
             <marker date="1477994397156" expanded="true" signature="361:465" placeholder="UPDATE shelt... " />
@@ -872,10 +833,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/map_functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Edit/user/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
+          <folding>
+            <marker date="1477994657644" expanded="true" signature="326:421" placeholder="INSERT INTO information... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emergency.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11815">
+          <caret line="695" column="0" selection-start-line="695" selection-start-column="0" selection-end-line="695" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/city/mito/mito_school.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="11" column="5454" selection-start-line="11" selection-start-column="5454" selection-end-line="11" selection-end-column="5454" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emergency.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="181" column="36" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/disaster_prevention.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Edit/user/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+        <state relative-caret-position="810">
+          <caret line="91" column="84" selection-start-line="91" selection-start-column="84" selection-end-line="91" selection-end-column="84" />
           <folding>
             <marker date="1477994200573" expanded="true" signature="325:399" placeholder="UPDATE infor... " />
             <marker date="1477994200573" expanded="true" signature="538:578" placeholder="SELECT * FRO... information" />
@@ -883,22 +910,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Edit/user/create.php">
+    <entry file="file://$PROJECT_DIR$/Edit/shelter/shelter_create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="320">
+          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
           <folding>
-            <marker date="1477994657644" expanded="true" signature="326:421" placeholder="INSERT INTO information... " />
+            <marker date="1477557264534" expanded="true" signature="398:489" placeholder="INSERT INTO shelter_goods... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding>
+            <marker date="1477545648562" expanded="true" signature="247:307" placeholder="SELECT * FRO... information" />
+            <marker date="1477545648562" expanded="true" signature="368:428" placeholder="SELECT * FRO... information" />
+            <marker date="1477545648562" expanded="true" signature="469:550" placeholder="SELECT * FRO... information" />
+            <marker date="1477545648562" expanded="true" signature="593:653" placeholder="SELECT * FRO... information" />
+            <marker date="1477545648562" expanded="true" signature="783:838" placeholder="SELECT * FRO... information" />
+            <marker date="1477545648562" expanded="true" signature="857:936" placeholder="SELECT * FRO... ${$sql1}" />
+            <marker date="1477545648562" expanded="true" signature="1119:1179" placeholder="SELECT * FRO... information" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Edit/user/edit_check.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+        <state relative-caret-position="810">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
           <folding>
             <marker date="1477547118261" expanded="true" signature="219:284" placeholder="UPDATE membe... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Edit/user/user_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Edit/manager/add_check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <marker date="1477993359813" expanded="true" signature="327:392" placeholder="INSERT INTO members... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/geolocation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emergency_information.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emergency.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#2;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#3;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#2;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
