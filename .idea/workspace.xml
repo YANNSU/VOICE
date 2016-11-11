@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="514cbd71-d724-42a2-8c27-85b86dc97407" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/LifeWater.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/TemporaryShelter.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emergency.html" afterPath="$PROJECT_DIR$/emergency.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emergency_information.js" afterPath="$PROJECT_DIR$/emergency_information.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map/geolocation.js" afterPath="$PROJECT_DIR$/map/geolocation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/normal.html" afterPath="$PROJECT_DIR$/normal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="ptype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,11 +108,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="emergency_information.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="emergency_information.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/emergency_information.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1088">
-                  <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+                <state relative-caret-position="442">
+                  <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -285,7 +289,6 @@
         <option value="$PROJECT_DIR$/Edit/manager/other_edit.php" />
         <option value="$PROJECT_DIR$/top.css" />
         <option value="$PROJECT_DIR$/top.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Edit/login.php" />
         <option value="$PROJECT_DIR$/normal.css" />
         <option value="$PROJECT_DIR$/emergency.css" />
@@ -299,6 +302,7 @@
         <option value="$PROJECT_DIR$/map/geolocation.js" />
         <option value="$PROJECT_DIR$/emergency_information.js" />
         <option value="$PROJECT_DIR$/emergency.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -524,15 +528,15 @@
       <workItem from="1477990400699" duration="3946000" />
       <workItem from="1478228969545" duration="1339000" />
       <workItem from="1478747946113" duration="14530000" />
-      <workItem from="1478839492857" duration="2816000" />
+      <workItem from="1478839492857" duration="3342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33204000" />
+    <option name="totallyTimeSpent" value="33730000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27132195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -833,14 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/map/map_functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -901,8 +897,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Edit/user/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="91" column="84" selection-start-line="91" selection-start-column="84" selection-end-line="91" selection-end-column="84" />
+        <state relative-caret-position="1003">
+          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
           <folding>
             <marker date="1477994200573" expanded="true" signature="325:399" placeholder="UPDATE infor... " />
             <marker date="1477994200573" expanded="true" signature="538:578" placeholder="SELECT * FRO... information" />
@@ -972,14 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emergency_information.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emergency.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -993,6 +981,22 @@
             <element signature="n#style#0;n#span#0;n#p#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#2;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emergency_information.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
