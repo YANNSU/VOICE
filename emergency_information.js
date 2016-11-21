@@ -205,30 +205,30 @@ function ColorJson(json, kind){
                             switch (json[j]['供給状況']) {
                                 case 0:
                                     features[i].style = {
-                                        'strokeColor': '#000000',
+                                        'strokeColor': '#000022',
                                         'fillColor': '#000055',
-                                        'fillOpacity': 0.8
+                                        'fillOpacity': 0.65
                                     };
                                     break;
                                 case 1:
                                     features[i].style = {
-                                        'strokeColor': '#000000',
+                                        'strokeColor': '#002288',
                                         'fillColor': '#0055aa',
-                                        'fillOpacity': 0.8
+                                        'fillOpacity': 0.65
                                     };
                                     break;
                                 case 2:
                                     features[i].style = {
-                                        'strokeColor': '#000000',
+                                        'strokeColor': '#0077cc',
                                         'fillColor': '#00aaff',
-                                        'fillOpacity': 0.8
+                                        'fillOpacity': 0.65
                                     };
                                     break;
                                 case 3:
                                     features[i].style = {
-                                        'strokeColor': '#000000',
+                                        'strokeColor': '#00cccc',
                                         'fillColor': '#00ffff',
-                                        'fillOpacity': 0.8
+                                        'fillOpacity': 0.65
                                     };
                                     break;
                             }
@@ -255,21 +255,21 @@ function ColorJson(json, kind){
                             switch (json[j]['供給状況']) {
                                 case 0:
                                     features[i].style = {
-                                        'strokeColor': '#000000',
+                                        'strokeColor': '#cccc00',
                                         'fillColor': '#ffff00',
                                         'fillOpacity': 0.8
                                     };
                                     break;
                                 case 1:
                                     features[i].style = {
-                                        'strokeColor': '#000000',
+                                        'strokeColor': '#777700',
                                         'fillColor': '#aaaa00',
                                         'fillOpacity': 0.8
                                     };
                                     break;
                                 case 2:
                                     features[i].style = {
-                                        'strokeColor': '#000000',
+                                        'strokeColor': '#222200',
                                         'fillColor': '#555500',
                                         'fillOpacity': 0.8
                                     };

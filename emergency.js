@@ -43,6 +43,7 @@ var map;
 var flug; //今マップ上の点が選択されているか判断するためのフラグ
 var lifeLineFlug; //現在ライフラインの項目が選択されているかどうかを判定する変数
 var mapvalue;
+var detailFlug;
 
 //=====================================================================//
 //ここからメイン関数
@@ -65,7 +66,7 @@ function init() {
         ],
         eventListeners: {
             'move': null,
-            'movestart' : null
+            'movestart': null
         },
         projection: new OpenLayers.Projection("EPSG:900913"),
         displayProjection: new OpenLayers.Projection("EPSG:4326"),
@@ -87,7 +88,7 @@ function init() {
     //水戸市の境界線を描画するレイヤーを作成
     vector = new OpenLayers.Layer.Vector("水戸市");
 
-    selectControl = new OpenLayers.Control.SelectFeature(vector,{});
+    selectControl = new OpenLayers.Control.SelectFeature(vector, {});
 
     selectControl.handlers.feature.stopDown = false;
 
@@ -162,55 +163,72 @@ function init() {
         //色分け表示画面を取り合えず消しておく
         $("div.break_down").hide();
         //ライフライン項目が選択されていた場合、水戸市の地図を作りなおす
-        if(lifeLineFlug == 1 && mapvalue != "life_line_water" && mapvalue != "life_line_elect"){
+        if (lifeLineFlug == 1 && mapvalue != "life_line_water" && mapvalue != "life_line_elect") {
             vector.removeAllFeatures();
             normalMap(2);
             //フラグを元に戻しておく
             lifeLineFlug = 0;
         }
+
+        detailFlug = 1;
+
         //=======================================================================//
         //ajax通信で各種地図の関数を呼び出している
         //=======================================================================//
         $.ajax({
             url: "normal.html",
             success: function () {
-                //臨時避難所が選択された場合の処理
-                if (mapvalue == "temporary_shelter") {
-                    visionTemporaryShelter();
-                }//給水・物資拠点が選択された場合の処理
-                else if (mapvalue == "goods_supply") {
-                    visionGoodsSupply();
-                }//ライフライン(水道)が選択された場合の処理
-                else if (mapvalue == "life_line_water") {
-                    visionLifeWater();
-                    //ライフラインフラグを立てておく
-                    lifeLineFlug = 1;
-                }//ライフライン(電気)が選択された場合の処理
-                else if (mapvalue == "life_line_elect") {
-                    visionLifeElect();
-                    //ライフラインフラグを立てておく
-                    lifeLineFlug = 1;
-                }//遺体安置所が選択された場合の処理
-                else if (mapvalue == "morgue") {
-                    visionMorgue();
-                }//通行止め情報が選択された場合の処理
-                else if (mapvalue == "road_closed") {
-                    visionRoadClosed();
-                }//避難所情報が選択された場合の処理
-                else if (mapvalue == "shelter") {
-                    visionShelter();
-                }//福祉避難所が選択された場合の処理
-                else if (mapvalue == "Welfare_shelter") {
-                    visionWelfare();
-                }//洪水避難所が選択された場合の処理
-                else if (mapvalue == "Flood_shelter") {
-                    visionFlood();
-                }//津波避難所が選択された場合の処理
-                else if (mapvalue == "Tsunami_shelter") {
-                    visionTunami();
-                }//火災避難所が選択された場合の処理
-                else if (mapvalue == "Fire_shelter") {
-                    visionFire();
+                switch (mapvalue) {
+                    //臨時避難所が選択された場合の処理
+                    case "temporary_shelter":
+                        visionTemporaryShelter();
+                        break;
+                    //給水・物資拠点が選択された場合の処理
+                    case "temporary_shelter":
+                        visionGoodsSupply();
+                        detailFlug = 0;
+                        break;
+                    //ライフライン(水道)が選択された場合の処理
+                    case "life_line_water":
+                        visionLifeWater();
+                        //ライフラインフラグを立てておく
+                        lifeLineFlug = 1;
+                        break;
+                    //ライフライン(電気)が選択された場合の処理
+                    case "life_line_elect":
+                        visionLifeElect();
+                        //ライフラインフラグを立てておく
+                        lifeLineFlug = 1;
+                        break;
+                    //遺体安置所が選択された場合の処理
+                    case "morgue":
+                        visionMorgue();
+                        detailFlug = 0;
+                        break;
+                    //通行止め情報が選択された場合の処理
+                    case "road_closed":
+                        visionRoadClosed();
+                        break;
+                    //避難所情報が選択された場合の処理
+                    case "shelter":
+                        visionShelter();
+                        break;
+                    //福祉避難所が選択された場合の処理
+                    case "Welfare_shelter":
+                        visionWelfare();
+                        break;
+                    case "Flood_shelter":
+                        //洪水避難所が選択された場合の処理
+                        visionFlood();
+                        break;
+                    //津波避難所が選択された場合の処理
+                    case "Tsunami_shelter":
+                        visionTunami();
+                        break;
+                    //火災避難所が選択された場合の処理
+                    case "Fire_shelter":
+                        visionFire();
+                        break;
                 }
             },
             error: function () {
@@ -241,9 +259,9 @@ function init() {
         connectShelterGoods(feature.attributes['施設名'], function (result) {
             //データがなかった場合
             if (result.YesNo == "no") {
-                
+
                 var createInfo = confirm("まだデータが無いようです\n作成しますか？");
-                if(createInfo == true){
+                if (createInfo == true) {
                     window.location = "Edit/login.php?name=" + feature.attributes['施設名'] + "";
                 }
             }

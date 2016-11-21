@@ -1,6 +1,28 @@
 /**
  * Created by root on 2016/07/06.
  */
+
+//===============================================//
+//観光情報を可視化する関数
+//===============================================//
+function visionSightseeing(){
+    //通常時の画像
+    var defaultStyle = new OpenLayers.Style({
+        'externalGraphic': "image/star.png",
+        'graphicHeight': 16,
+        'graphicWidth': 16
+    });
+    //選択された時に画像を大きくする
+    var selectStyle = new OpenLayers.Style({
+        'externalGraphic': "image/star.png",
+        'graphicHeight': 30,
+        'graphicWidth': 30
+    });
+    var styleMap = new OpenLayers.StyleMap({"default" : defaultStyle, "select" : selectStyle});
+
+    Vision("sightseeing", styleMap);
+}
+
 //===============================================//
 //避難所を可視化する関数
 //===============================================//
@@ -227,15 +249,27 @@ function SelectMapFeatures(evt) {
     table = '<table>';
     //必要な情報をテーブルに格納する
     for(var key = "施設名" in feature.attributes) {
-        if(key != "id" && key != "lat" && key != "lon") {
-            //文字列に選択された町域の情報を格納
-            table += '<tr class="parameter"><td>' + key + '</td><td>' + feature.attributes[key] + '</td></tr>';
+        if(typeof(feature.attributes['説明']) == "undefined") {
+            if (key != "id" && key != "lat" && key != "lon") {
+                //文字列に選択された町域の情報を格納
+                table += '<tr class="parameter"><td>' + key + '</td><td>' + feature.attributes[key] + '</td></tr>';
+            }
+        }
+        else{
+            if (key == "施設名" || key == "住所" || key == "電話") {
+                //文字列に選択された町域の情報を格納
+                table += '<tr class="parameter"><td>' + key + '</td><td>' + feature.attributes[key] + '</td></tr>';
+            }
         }
     }
     table += '</table>';
     //文字列を指定の場所に表示
     $("div[id=info]").append(table);
-    $("#detail").show();
+    
+    //詳細情報を表示する必要のある時は詳細情報ボタンも表示
+    if(detailFlug == 1) {
+        $("#detail").show();
+    }
 }
 
 //========================================================//
@@ -247,7 +281,9 @@ function UnselectMapFeatures(evt) {
     //前にどこか選択されていたら、その情報を消す
     if (flug) {
         $("div[id=info]").empty();
-        $("#detail").hide();
+        if(detailFlug == 1) {
+            $("#detail").hide();
+        }
         flug = 0;
     }
 }

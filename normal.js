@@ -45,6 +45,7 @@ var mapFlug; //基礎情報の項目が選択されているかを判定する�
 var mapvalue;
 var herelat;
 var herelon;
+var detailFlug;
 
 //=====================================================================//
 //ここからメイン関数
@@ -149,69 +150,74 @@ function init() {
         mapvalue = $(this).attr("value");
         //情報表示スペースを空にする
         $("div[id=info]").empty();
+
+        //詳細情報ボタンを隠す
+        $("#detail").hide();
+
         //事前に項目が選択されていた場合、その項目の点を消しておく
         if (addVector.removeAllFeatures()) {
             map.removeMap(addVector);
         }
-        //基礎情報項目が選択されていた場合、水戸市の地図を作りなおす
-        /*if (mapFlug == 1 && mapvalue != "population" && mapvalue != "population_density" && mapvalue != "normal") {
-            vector.removeAllFeatures();
-            normalMap(2);
-            //フラグを元に戻しておく
-            mapFlug = 0;
-        }*/
+        //詳細情報フラグを0にする
+        detailFlug = 0;
+
         //=======================================================================//
         //ajax通信で各種地図の関数を呼び出している
         //=======================================================================//
         $.ajax({
             url: "normal.html",
             success: function () {
-                //人口マップが選択されていた場合
-                if (mapvalue == "population") {
-                    //色分け表示画面を消しておく
-                    $("div.break_down").hide();
-                    populationMap();
-                    mapFlug = 1;
+                switch (mapvalue) {
+                    //人口マップが選択されていた場合
+                    case "population":
+                        //色分け表示画面を消しておく
+                        $("div.break_down").hide();
+                        populationMap();
+                        mapFlug = 1;
+                        break;
+                    //人口密度マップが選択されていた場合
+                    case "population_density":
+                        //色分け表示画面を消しておく
+                        $("div.break_down").hide();
+                        population_densityMap();
+                        mapFlug = 1;
+                        break;
+                    //基礎地図が選択されていた場合
+                    case "normal":
+                        //色分け表示画面を消しておく
+                        $("div.break_down").hide();
+                        normalMap(2);
+                        mapFlug = 1;
+                        break;
+                    case "shelter":
+                        visionShelter();
+                        break;
+                    case "Welfare_shelter":
+                        visionWelfare();
+                        break;
+                    case "Flood_shelter":
+                        visionFlood();
+                        break;
+                    case "Tsunami_shelter":
+                        visionTunami();
+                        break;
+                    case "Fire_shelter":
+                        visionFire();
+                        break;
+                    case "AED":
+                        visionAED();
+                        break;
+                    case "well":
+                        visionWell();
+                        break;
+                    case "water_supply":
+                        visionWater();
+                        break;
+                    case "sightseeing":
+                        detailFlug = 1;
+                        visionSightseeing();
+                        break;
                 }
-                //人口密度マップが選択されていた場合
-                else if (mapvalue == "population_density") {
-                    //色分け表示画面を消しておく
-                    $("div.break_down").hide();
-                    population_densityMap();
-                    mapFlug = 1;
-                }
-                //基礎地図が選択されていた場合
-                else if (mapvalue == "normal") {
-                    //色分け表示画面を消しておく
-                    $("div.break_down").hide();
-                    normalMap(2);
-                    mapFlug = 1;
-                }
-                else if (mapvalue == "shelter") {
-                    visionShelter();
-                }
-                else if (mapvalue == "Welfare_shelter") {
-                    visionWelfare();
-                }
-                else if (mapvalue == "Flood_shelter") {
-                    visionFlood();
-                }
-                else if (mapvalue == "Tsunami_shelter") {
-                    visionTunami();
-                }
-                else if (mapvalue == "Fire_shelter") {
-                    visionFire();
-                }
-                else if (mapvalue == "AED") {
-                    visionAED();
-                }
-                else if (mapvalue == "well") {
-                    visionWell();
-                }
-                else if (mapvalue == "water_supply") {
-                    visionWater();
-                }
-
             },
             error: function () {
                 alert("hoiho");
@@ -224,7 +230,62 @@ function init() {
         geoLocation();
     })
 
-    $("div[id=showRoute]").click(function (){
+    //==============================================================//
+    //詳細情報を押すと、その施設の詳細情報を表示するwindowを開きます
+    //==============================================================//
+    $("#detail").click(function () {
+
+        $("body").append('<div id="modal-bg"></div>');
+
+        //画面中央を計算する関数を実行
+        modalResize();
+
+        var detailTable = "";
+        //必要な情報をテーブルに格納する
+        for (var key = "施設名" in feature.attributes) {
+            if (key != "id" && key != "lon" && key != "lat") {
+                //文字列に選択された町域の情報を格納
+                if (key == "説明") {
+                    detailTable += '<tr><th class="large">' + key + '</th><td>' + feature.attributes[key] + '</td></tr>';
+                }
+                else if (key == "URL") {
+                    if (feature.attributes["URL"] != "") {
+                        detailTable += '<tr><th class="small">リンク</th><td><a href="' + feature.attributes[key] + '" target="_blank">クリックで別ウィンドウが開きます</a></td></tr>';
+                    }
+                    else {
+                        detailTable += '<tr><th class="small">リンク</th><td><a href="' + feature.attributes[key] + '" target="_blank"></a></td></tr>';
+                    }
+                }
+                else {
+                    detailTable += '<tr><th class="small">' + key + '</th><td>' + feature.attributes[key] + '</td></tr>';
+                }
+            }
+        }
+        //格納した情報をモーダルウィンドウに追加する
+        $("table[id=modal-table]").append(detailTable);
+
+        //モーダルウィンドウを表示
+        $("#modal-bg,#modal-main").fadeIn(400);
+
+        //画面のどこかをクリックしたらモーダルを閉じる
+        $("#modal-bg,#modal-main").click(function () {
+            $("#modal-main,#modal-bg").fadeOut("slow", function () {
+                //挿入した<div id="modal-bg"></div>を削除
+                $('#modal-bg').remove();
+                //テーブルの内容も削除
+                $("table[id=modal-table]").empty();
+            });
+        });
+
+        //画面の左上からmodal-mainの横幅・高さを引き、その値を2で割ると画面中央の位置が計算できます
+        $(window).resize(modalResize);
+
+    })
+
+    //============================================================//
+    //============================================================//
+
+    $("div[id=showRoute]").click(function () {
         console.log(herelat);
         console.log(herelon);
 
@@ -232,15 +293,15 @@ function init() {
         console.log($url);
 
         /*$.getJSON($url, function(geojson){
-           console.log(geojson);
-        });*/
+         console.log(geojson);
+         });*/
 
         $.ajax({
             url: "ajax.php?url=http://www.yournavigation.org/api/1.0/gosmore.php?format=geojson&flat=36.5720&flon=140.6432&tlat=36.3582232&tlon=140.4773157&v=bicycle&fast=1&layer=mapnik",
             type: "GET",
             dataType: "json",
             //成功したらjsonデータをコールバックして返す
-            success: function(geojson){
+            success: function (geojson) {
                 alert("success");
                 console.log(geojson);
                 console.log(geojson.crs);
@@ -251,10 +312,10 @@ function init() {
 
 
                 /*var points = new Array();
-                for(var i = 0; i < geojson.length ; i++){
-                    points[i] = new OpenLayers.Geometry.Point(geojson.coordinates[i][1], geojson.coordinates[i][2]);
-                    points[i].transform(new OpenLayers.Projection("EPSG:4326"), new OpenLayers.Projection("EPSG:900913"));
-                }*/
+                 for(var i = 0; i < geojson.length ; i++){
+                 points[i] = new OpenLayers.Geometry.Point(geojson.coordinates[i][1], geojson.coordinates[i][2]);
+                 points[i].transform(new OpenLayers.Projection("EPSG:4326"), new OpenLayers.Projection("EPSG:900913"));
+                 }*/
 
                 var line_style = {
                     'strokeColor': '#f39800',
@@ -269,10 +330,27 @@ function init() {
                 hereVector.style = line_style;
             },
             //失敗したらエラーメッセージの表示
-            error: function(){
+            error: function () {
                 alert("error");
             }
         });
     })
 }
 
+//==========================================================//
+//モーダルウィンドウの位置を図るための関数
+//==========================================================//
+function modalResize() {
+
+    var w = $(window).width();
+    var h = $(window).height();
+
+    var cw = $("#modal-main").outerWidth();
+    var ch = $("#modal-main").outerHeight();
+
+    //取得した値をcssに追加する
+    $("#modal-main").css({
+        "left": ((w - cw) / 2) + "px",
+        "top": ((h - ch) / 2) + "px"
+    });
+}

@@ -19,7 +19,8 @@ div.main {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: linear-gradient(to bottom, #009944 50px, #d0f9e4 30%);
+    /*background: linear-gradient(to bottom, #009944 50px, #d0f9e4 30%);*/
+    background: linear-gradient(to bottom, #88dd99 50px, #ddfffe 30%);
 }
 
 /*システム名や切り替えボタンを配置する場所*/
@@ -29,17 +30,6 @@ div.header {
     width: 28%;
     height: 19%;
     color: #ffffff;
-}
-
-/*ローディング用gif画像のスタイル*/
-#now-loading{
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 15px;
-    position: fixed;
-    left: 50%;
-    top: 50%;
 }
 
 /*クリックするとサイドメニューを出すボタンのスタイル*/
@@ -63,7 +53,8 @@ div.mode1 {
     width: 44%;
     text-align: center;
     line-height: 35px;
-    background-color: #007924;
+    /*background-color: #007924;*/
+    background-color: #55bf6a;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4) inset;
     border-radius: 4px;
     color: #ffffff;
@@ -78,7 +69,8 @@ div.mode2 {
     width: 44%;
     text-align: center;
     line-height: 35px;
-    background-color: #009944;
+    /*background-color: #009944;*/
+    background-color: #75df8a;
     border-radius: 4px;
     color: #ffffff;
 }
@@ -217,7 +209,9 @@ tr.parameter {
     text-shadow: 1px -1px rgba(0, 0, 0, 0.2);
 }
 
-/*メニューバーのスタイル*/
+/***************************************************************
+サイドメニューバーのスタイル
+***************************************************************/
 ul {
     list-style-type: none;
     margin: 0;
@@ -238,7 +232,8 @@ ul#menu li span {
     height: 1px;
     line-height: 1px;
     padding: 6%;
-    background: linear-gradient(to bottom, #007924, #005904);
+    /*background: linear-gradient(to bottom, #007924, #005904);*/
+    background: linear-gradient(to bottom, #5abf65, #45af5a);
     display: block;
     border: 1px solid #333333;
     color: #fff;
@@ -255,13 +250,139 @@ ul#menu li a {
     display: block;
     line-height: 1px;
     padding: 5% 0;
-    background: linear-gradient(to bottom, rgba(0,185,100,0.7),rgba(0,169,84,0.7));
+    /*background: linear-gradient(to bottom, rgba(0,185,100,0.7),rgba(0,169,84,0.7));*/
+    background: linear-gradient(to bottom, rgba(140,255,155,0.7),rgba(125,240,140,0.7));
     background-color: #00b964;
     color: #eee;
 }
 
 #menu li a:hover {
     background-color: #005914;
+}
+
+/***************************************************************
+サイドメニューバーのスタイルはここまで
+***************************************************************/
+
+/***************************************************************
+観光地点の詳細情報を表示するモーダルウィンドウのスタイル
+***************************************************************/
+/* モーダルウィンドウのスタイル */
+#modal-main {
+    display: none;
+    width: 700px;
+    height: 590px;
+    margin: 0;
+    padding: 0;
+    background-color: #ddfffe;
+    color: #666666;
+    position: fixed;
+    z-index: 999;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+/* 背景を暗くするためのスタイル */
+#modal-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+
+/* 背景を暗くするためのスタイル */
+#modal-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+
+/* モーダルヘッダーのスタイル */
+div.modal-header {
+    height: 50px;
+    line-height: 50px;
+    font-weight: 800;
+    font-size: x-large;
+    color: #eee;
+    background-color: #45af5a;
+    border-radius: 5px 5px 0 0;
+}
+
+/* モーダルウィンドウ名のスタイル */
+div.modal-name{
+    text-align: center;
+    line-height: 50px;
+    font-weight: 800;
+    font-size: x-large;
+    color: #eee;
+}
+
+table.modal-table {
+    width: 640px;
+    height: auto;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+table.modal-table th {
+    width: 140px;
+    margin: 0 auto;
+    background-color: #aaffbb;
+    padding: 10px 0px;
+}
+
+table.modal-table th.small {
+    height: 15px;
+}
+
+table.modal-table th.middle {
+    height: 15px;
+}
+
+table.modal-table th.large {
+    height: 150px;
+}
+
+table.modal-table td {
+    background-color: #fff;
+    padding: 10px 0px;
+    word-break: break-all;
+}
+
+/***************************************************************
+モーダルウィンドウのスタイルはここまで
+***************************************************************/
+
+/*詳細情報表示ボタンのスタイル*/
+div[id=detail] {
+    display: none;
+    position: absolute;
+    right: 20%;
+    bottom: 20%;
+    text-align: center;
+    font-size: x-large;
+    height: 1px;
+    line-height: 1px;
+    padding: 2.5% 0;
+    width: 20%;
+    border-radius: 5px;
+    background-color: #88dd99;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    color: #eee;
+}
+
+div[id=detail]:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) inset;
+    background-color: #66bb77;
 }
 
 /************************************************
@@ -280,6 +401,10 @@ ul#menu li a {
         font-size: large;
         height: 1px;
         line-height: 1px;
+    }
+
+    div[id=detail] {
+        font-size: large;
     }
 }
 
@@ -452,6 +577,24 @@ ul#menu li a {
         text-shadow: 1px -1px rgba(0, 0, 0, 0.2);
     }
 
+    /*詳細情報表示ボタンのスタイル*/
+    div[id=detail] {
+        position: absolute;
+        bottom: 10%;
+        right: 30%;
+        margin: 10px 0px 0px 0px;
+        height: 1px;
+        line-height: 1px;
+        padding: 4% 0px;
+        width: 20%;
+        border-radius: 5px;
+        font-size: large;
+    }
+
+    /***************************************************************
+    左から出てくるサイドメニューバーのスタイル
+    ***************************************************************/
+
     /*table要素を加えておく*/
     ul#menu {
         display: table;
@@ -488,6 +631,72 @@ ul#menu li a {
         display: block;
         line-height: 1px;
     }
+
+    /***************************************************************
+    観光地点の詳細情報を表示するモーダルウィンドウのスタイル
+    ***************************************************************/
+
+    /* モーダルウィンドウのスタイル */
+    #modal-main {
+        width: 90%;
+        height: 75%;
+    }
+
+    /* 背景を暗くするためのスタイル */
+    #modal-bg {
+        height: 120%;
+    }
+
+    /* 背景を暗くするためのスタイル */
+    #modal-bg {
+        height: 120%;
+    }
+
+    /* モーダルヘッダーのスタイル */
+    div.modal-header {
+        height: 10%;
+    }
+
+    /* モーダルウィンドウ名のスタイル */
+    div.modal-name{
+        line-height: 200%;
+        font-size: medium;
+    }
+
+    table.modal-table {
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        padding: 2.5% 2.5%;
+    }
+
+    table.modal-table th {
+        width: 25%;
+        font-size: small;
+        padding: 0.5% 0px;
+    }
+
+    table.modal-table th.small {
+        height: 3%;
+    }
+
+    table.modal-table th.middle {
+        height: 6%;
+    }
+
+    table.modal-table th.large {
+        height: 32%;
+    }
+
+    table.modal-table td {
+        font-size: small;
+        padding: 0;
+    }
+
+    /***************************************************************
+    モーダルウィンドウのスタイルはここまで
+    ***************************************************************/
+
 }
 
 /*************************************************************/
@@ -503,6 +712,11 @@ ul#menu li a {
     div[id=herePlace] {
         font-size: medium;
     }
+
+    div[id=detail]{
+        font-size: medium;
+    }
+
     div.menu_button {
         font-size: medium;
         font-weight: 700;
@@ -525,6 +739,10 @@ ul#menu li a {
         line-height: 15px;
     }
     div[id=herePlace] {
+        font-size: small;
+    }
+
+    div[id=detail]{
         font-size: small;
     }
 }

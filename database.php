@@ -38,7 +38,29 @@ else if ($mapdata == "water_supply") {
         , 'lon' => $row->lon
         );
     }
-} //その他の場合 
+} //その他の場合
+else if($mapdata == "sightseeing"){
+    $recordSet = mysqli_query($db, "SELECT * FROM sightseeing") or
+    die(mysqli_error($db));
+
+    $user = array();
+    while ($row = mysqli_fetch_object($recordSet)) {
+        $user[] = array(
+            'id' => $row->id
+        , '施設名' => $row->name
+        , '住所' => $row->address
+        , 'lat' => $row->lat
+        , 'lon' => $row->lon
+        , '説明' => $row->description
+        , '管理者' => $row->contact
+        , '電話' => $row->tell
+        , 'URL' => $row->URL
+        , '営業時間' => $row->time
+        , '定休日' => $row->rest
+        , '駐車場' => $row->parking
+        );
+    }
+}
 else {
     //避難所の情報をデータベースから持ってくる
     if ($mapdata == "shelter") {
